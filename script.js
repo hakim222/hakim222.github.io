@@ -10,31 +10,22 @@ window.addEventListener("scroll", (event) => {
     } else {
         navbar.style.boxShadow = "none";
     }
-    // navbarLinks.forEach((link)=>{
-    //     console.log(link.getAttribute('href')+" "+document.querySelector(link.getAttribute('href')).getBoundingClientRect().bottom);
-    // })
     updateActive(navbarLinks);
 });
 
 // Loop through all navbar links
 navbarLinks.forEach(function (link) {
     // Get the target section for the current navbar link
-    // console.log(parseInt(link.getAttribute('href')+" "+document.querySelector(link.getAttribute('href')).getBoundingClientRect().top)-67);   
-
     link.addEventListener('click', function (event) {
         var targetSection = document.querySelector(link.getAttribute('href'));
         var bounding = targetSection.getBoundingClientRect();
         var targetPosition = window.scrollY+bounding.top-67;
-        //console.log(bounding.top);
-        // console.log(window.innerHeight);
         event.preventDefault();
 
         window.scrollTo({
             top: targetPosition,
             behavior: 'smooth'
         });
-        //console.log(targetPosition);
-        
     });
 });
 
