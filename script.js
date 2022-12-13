@@ -25,7 +25,7 @@ navbarLinks.forEach(function (link) {
         var targetSection = document.querySelector(link.getAttribute('href'));
         var bounding = targetSection.getBoundingClientRect();
         var targetPosition = window.scrollY+bounding.top-67;
-        console.log(bounding.top);
+        //console.log(bounding.top);
         // console.log(window.innerHeight);
         event.preventDefault();
 
@@ -33,7 +33,7 @@ navbarLinks.forEach(function (link) {
             top: targetPosition,
             behavior: 'smooth'
         });
-        console.log(targetPosition);
+        //console.log(targetPosition);
         
     });
 });
