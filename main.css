@@ -287,14 +287,14 @@ div.job {
 .job h1 {
   color: var(--main);
   padding: 0;
-  font-size: 20pt;
+  font-size: 20px;
 }
 
 .job h2 {
   color: var(--accent2);
   margin: 0;
   padding: 0;
-  font-size: 15pt;
+  font-size: 15px;
 }
 
 .job ul {
