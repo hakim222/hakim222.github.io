@@ -232,7 +232,6 @@ a.active {
 
 .experience {
   background-color: var(--accent4);
-
   padding-bottom: 50px;
 }
 
@@ -247,6 +246,7 @@ a.active {
 div.exp {
   display: flex;
   margin: 0px 100px;
+  align-content: flex-start;
 }
 
 div.vl {
@@ -256,8 +256,9 @@ div.vl {
 
 .exp h2 {
   color: var(--accent1);
-  flex-shrink: 0;
+  font-size: 20px;
 }
+
 
 .arrow {
   flex-shrink: 0;
@@ -277,10 +278,9 @@ div.vl {
 div.job {
   flex-direction: column;
   text-align: left;
-  flex-grow: 1;
   background-color: var(--accent1);
   margin: 0 0 10px 10px;
-  padding: 0 0 10px 10px;
+  padding: 10px;
 }
 
 .job h1 {
